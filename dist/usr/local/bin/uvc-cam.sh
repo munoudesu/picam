@@ -12,7 +12,7 @@ echo 0x0300 > "$GADGET/bcdUSB"    # useb3.o
 
 echo 0xEF > "$GADGET/bDeviceClass"    # Miscellaneous Device Class
 echo 0x02 > "$GADGET/bDeviceSubClass" # Common Class
-echo 0x01 > "$GADGET/bDeviceProtocol" # Interface Association Descriptor (IAD) を使う
+echo 0x01 > "$GADGET/bDeviceProtocol" # Interface Association Descriptor
 
 mkdir -p "$GADGET/strings/0x409"
 echo "0123456789abcdef" > "$GADGET/strings/0x409/serialnumber"
